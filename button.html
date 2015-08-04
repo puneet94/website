@@ -1,0 +1,89 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Responsive 3-Line Menu</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<style type="text/css">
+	
+	@media screen and (max-width: 768px) {
+	#menu {
+			width: 50px;
+    display: block;
+    background: black;
+    font-size: 1.35em;
+    text-align: center;
+    color: white;
+    height: 50px;
+    font-size: 35px;
+    border-radius: 10px;
+}
+		.vert_navbar{
+		width:20%;
+		display: none;	
+		vertical-align: top;
+		
+	}
+	.vert_navbar ul{
+		background-color: #1a242d;
+		 list-style-type: none;
+		 text-align: left;
+		 
+		 height:100%;
+	}
+	.vert_navbar ul>li:nth-child(1){
+	    border-bottom: thin solid white;
+    	height: 50px;
+    	padding-top: 15px;
+	}
+	.vert_navbar ul>li:nth-child(n+2){
+	    border-bottom: thin solid white;
+    	border-top: thin solid white;
+    	height: 50px;
+    	margin-top: 3px;
+    	padding-top: 15px;
+	}
+	.vert_navbar ul>li img{
+		width:15%;
+	}
+	.vert_navbar ul>li span{
+		font-size:25px;
+		color:white;
+		vertical-align: top;
+		
+	}
+	}
+	@media screen and (min-width: 768px) {
+	.vert_navbar {
+			display: none;
+		}
+		#menu {
+			
+			display: none;
+			
+		}
+	}
+	</style>
+</head>
+<body>
+	<div id="menu">&#9776;</div>
+	<div class="vert_navbar">
+		<ul id="nav">
+			<li><img src="images/1about.png"><span>About</span></li>
+			<li><img src="images/2activity.png"><span>Activity</span></li>
+			<li><img src="images/3reviews.png"><span>Reviews</span></li>
+			<li><img src="images/4network.png"><span>Network</span></li>
+			<li><img src="images/5lists.png"><span>Lists</span></li>
+			<li><img src="images/6statistics.png"><span>Statistics</span></li>
+		</ul>
+	</div>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	$("#menu").click(function(){
+		$(".vert_navbar").toggle('slide');
+	});
+	
+</script>
+</body>
+</html>
