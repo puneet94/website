@@ -1,8 +1,18 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'ProximaNovaRegular';
 }
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('/website/css/fonts/ProximaNova-Regular.otf') format("opentype");
+     
+}
+@font-face {
+    font-family: 'ProximaNovaLight';
+    src: url('/website/css/fonts/ProximaNova-Light.otf') format("opentype");
+}
+
 @xs-vvmin:50px;
 @xs-vmin: 320px;
 @xs-min: 480px;
@@ -31,7 +41,7 @@ html, body {
 @media @large { 
 	.top_bar{
 		background-color: #2c343b;
-		font-family: 'Raleway', sans-serif;
+		font-family: 'ProximaNovaRegular';
 		padding:10px;
 	}
 
@@ -44,7 +54,7 @@ html, body {
 	}
 	.logo{
 		margin:auto;
-		width:200px;	
+		width:70%;	
 	}
 
 	.searchSection{
@@ -70,41 +80,46 @@ html, body {
 	}
 
 	.authSection{
-	text-align:center;
-    width: 29%;
+	/*text-align:center;*/
+    
+		width: 29%;
     display: inline-block;
-    position:relative;
-		top:-10px;	
+    position: relative;
+    top: -10px;
+    left: 25px;	
 	}
 	.login{
 		background-color: #E94643;
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+     padding-right: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-style: solid;
     border-color: #E94643;
-    font-size:19px;
-    border-radius: 5px;
+    font-size:15px;
+    border-radius: 2px;
+    margin-left:100px;
 	}
 	.signup{
 		    background-color: #E94643;
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    
     padding-top: 5px;
     padding-bottom: 5px;
     border-style: solid;
     border-color: #E94643;
-    float:right;
-    font-size:19px;
-    border-radius: 5px;
+    margin-left:30px;
+    font-size:15px;
+    border-radius: 2px;
+    // float:right;
+     padding-left: 15px;
+     padding-right: 15px;
 	}
 	.main{
 		position: relative;
 		height:550px;
-		font-family: 'Raleway', sans-serif;
+		font-family: 'ProximaNovaRegular';
 	}
 	.main_img{
 		width:100%;
@@ -134,8 +149,8 @@ html, body {
 		text-align:center;
 	}
 	.change_image{
-		width:5%;
-		margin-bottom:40px;
+		width:3%;
+		margin-bottom:80px;
 	}
 	.profile_pic{
 		width:220px;
@@ -143,8 +158,8 @@ html, body {
 		margin-left:2%;
 	}
 	.add_pic{
-		width:5%;
-		margin-bottom:40px;
+		width:3%;
+		margin-bottom:80px;
 	}
 	.state{
 		width:100%;
@@ -156,46 +171,38 @@ html, body {
 		text-align:center;
 		margin-top:3%;
 	}
+	.content{
+		margin: 0px 90px 0px 90px;
+	}
 	.vert_navbar{
 		width:20%;
+		background-color:black;
 		display: inline-block;
 		vertical-align: top;
-		margin-right:-15px;
 		height:755px;
 	}
-	.vert_navbar ul{
-		background-color: #1a242d;
-		 list-style-type: none;
-		 text-align: left;
-		 margin:0px;
-		 padding-left:15px;
-		 position:relative;
-		 left:-12px;
-		 height:100%;
-	}
-	.vert_navbar ul>li:nth-child(1){
-	    border-bottom: thin solid white;
-    	height: 50px;
-    	padding-top: 15px;
-	}
-	.vert_navbar ul>li:nth-child(n+2){
+	
+	
+	.vert_navbar div{
 	    border-bottom: thin solid white;
     	border-top: thin solid white;
-    	height: 50px;
+    	height: 40px;
     	margin-top: 3px;
     	padding-top: 15px;
 	}
-	.vert_navbar ul>li img{
-		width:15%;
+	.vert_navbar div img{
+		width:30px;
+		height:30px;
+		margin-left:20px;
 	}
-	.vert_navbar ul>li span{
-		font-size:25px;
+	.vert_navbar div span{
+		font-size:20px;
 		color:white;
 		vertical-align: top;
 		margin-left:20px;
 	}
 	.display{
-		width:55%;
+		width:50%;
 		display:inline-block;
 		vertical-align: top;
 		border-right: thin solid;
@@ -223,7 +230,7 @@ html, body {
 		width:100%;
 	}
 	.follow_list{
-		width:25%;
+		width:28%;
 		display:inline-block;
 
 	}
@@ -320,7 +327,7 @@ html, body {
 @media @desktop-strict{ 
 	.top_bar{
 		background-color: #2c343b;
-		font-family: 'Raleway', sans-serif;
+		font-family: 'ProximaNovaRegular';
 		padding:10px;
 	}
 
@@ -331,7 +338,7 @@ html, body {
 	}
 	.logo{
 		margin:auto;
-		width:100%;	
+		width:80%;	
 	}
 
 	.searchSection{
@@ -342,13 +349,13 @@ html, body {
 		top:-11px;
 	}
 	.query{
-		height: 40px;
+		height: 30px;
     	border-radius: 6px;
     	font-size: 18px;   
     	width:48%;
 	}
 	.location{
-		height: 40px;
+		height: 30px;
 	    border-radius: 6px;
 	    font-size: 18px;
 	    background: url("/website/images/toolbar_find.png") no-repeat 100% 6px;
@@ -366,32 +373,32 @@ html, body {
 	.login{
 		background-color: #E94643;
 	    color: white;
-	    padding-left: 10px;
-	    padding-right: 10px;
+	    padding-left: 15px;
+	    padding-right: 15px;
 	    padding-top: 5px;
 	    padding-bottom: 5px;
 	    border-style: solid;
 	    border-color: #E94643;
-	    font-size:19px;
-	    border-radius: 5px;
+	    font-size:15px;
+	    border-radius: 2px;
 	}
 	.signup{
 		background-color: #E94643;
 	    color: white;
-	    padding-left: 10px;
-	    padding-right: 10px;
+	    padding-left: 15px;
+	    padding-right: 15px;
 	    padding-top: 5px;
 	    padding-bottom: 5px;
 	    border-style: solid;
 	    border-color: #E94643;
 	    float:right;
-	    font-size:19px;
-	    border-radius: 5px;
+	    font-size:15px;
+	    border-radius: 2px;
 	}
 	.main{
 		position: relative;
 		height:500px;
-		font-family: 'Raleway', sans-serif;
+		font-family: 'ProximaNovaRegular';
 	}
 	.main_img{
 		width:100%;
@@ -421,17 +428,17 @@ html, body {
 		text-align:center;
 	}
 	.change_image{
-		width:7%;
-		margin-bottom:40px;
+		width:3%;
+		margin-bottom:80px;
 	}
 	.profile_pic{
-		width:220px;
+		width:200px;
 		margin-right: 2%;
 		margin-left:2%;
 	}
 	.add_pic{
-		width:7%;
-		margin-bottom:40px;
+		width:3%;
+		margin-bottom:80px;
 	}
 	.state{
 		width:100%;
@@ -443,46 +450,38 @@ html, body {
 		text-align:center;
 		margin-top:3%;
 	}
+	.content{
+		margin: 0px 30px 0px 30px;
+	}
 	.vert_navbar{
 		width:20%;
+		background-color:black;
 		display: inline-block;
 		vertical-align: top;
-		margin-right:-15px;
 		height:755px;
 	}
-	.vert_navbar ul{
-		background-color: #1a242d;
-		 list-style-type: none;
-		 text-align: left;
-		 margin:0px;
-		 padding-left:15px;
-		 position:relative;
-		 left:-12px;
-		 height:100%;
-	}
-	.vert_navbar ul>li:nth-child(1){
-	    border-bottom: thin solid white;
-    	height: 50px;
-    	padding-top: 15px;
-	}
-	.vert_navbar ul>li:nth-child(n+2){
+	
+	
+	.vert_navbar div{
 	    border-bottom: thin solid white;
     	border-top: thin solid white;
-    	height: 50px;
+    	height: 40px;
     	margin-top: 3px;
     	padding-top: 15px;
 	}
-	.vert_navbar ul>li img{
-		width:15%;
+	.vert_navbar div img{
+		width:30px;
+		height:30px;
+		margin-left: 15px;
 	}
-	.vert_navbar ul>li span{
-		font-size:25px;
+	.vert_navbar div span{
+		font-size:20px;
 		color:white;
 		vertical-align: top;
-		margin-left:20px;
+		margin-left:15px;
 	}
 	.display{
-		width:55%;
+		width:50%;
 		display:inline-block;
 		vertical-align: top;
 		border-right: thin solid;
@@ -491,7 +490,7 @@ html, body {
 	.disp_header{
 		background-color: #e4e2e2;
 		color: #463741;
-		font-size:40px;
+		font-size:30px;
 		text-align: center;
 		border-bottom: thick solid #463741;
 	}
@@ -510,7 +509,7 @@ html, body {
 		width:100%;
 	}
 	.follow_list{
-		width:25%;
+		width:28%;
 		display:inline-block;
 
 	}
@@ -616,7 +615,7 @@ html, body {
 	.top_bar{
 		background-color: #2c343b;
 		padding:10px;
-		font-family: 'Raleway', sans-serif;
+		font-family: 'ProximaNovaRegular';
 	}
 
 	.imgSection{
@@ -627,7 +626,7 @@ html, body {
 	}
 	.logo{
 		margin:auto;
-		width:100%;	
+		width:90%;	
 	}
 
 	.searchSection{
@@ -671,7 +670,7 @@ html, body {
 	    border-style: solid;
 	    border-color: #E94643;
 	    font-size: 13px;
-	    border-radius:5px;
+	    border-radius:2px;
 	}
 	.signup{
 		background-color: #E94643;
@@ -683,13 +682,13 @@ html, body {
 	    border-style: solid;
 	    border-color: #E94643;
 	    font-size: 13px;
-	    border-radius:5px;
+	    border-radius:2px;
 	    float:right;
 	}
 	.main{
 		position: relative;
 		height:500px;
-		font-family: 'Raleway', sans-serif;
+		font-family: 'ProximaNovaRegular';
 	}
 	.main_img{
 		width:100%;
@@ -718,17 +717,17 @@ html, body {
 		text-align:center;
 	}
 	.change_image{
-		width:10%;
-		margin-bottom:40px;
+		width:5%;
+		margin-bottom:80px;
 	}
 	.profile_pic{
-		width:220px;
+		width:200px;
 		margin-right: 2%;
 		margin-left:2%;
 	}
 	.add_pic{
-		width:10%;
-		margin-bottom:40px;
+		width:5%;
+		margin-bottom:80px;
 	}
 	.state{
 		width:100%;
@@ -740,46 +739,38 @@ html, body {
 		text-align:center;
 		margin-top:3%;
 	}
+	.content {
+    	margin: 0px 30px 0px 30px;
+	}
 	.vert_navbar{
 		width:20%;
+		background-color:black;
 		display: inline-block;
 		vertical-align: top;
-		margin-right:-15px;
-		height:960px;
+		height:755px;
 	}
-	.vert_navbar ul{
-		background-color: #1a242d;
-		 list-style-type: none;
-		 text-align: left;
-		 margin:0px;
-		 padding-left:0px;
-		 position:relative;
-		 left:0px;
-		 height:100%;
-	}
-	.vert_navbar ul>li:nth-child(1){
-	    border-bottom: thin solid white;
-    	height: 30px;
-    	padding-top: 10px;
-	}
-	.vert_navbar ul>li:nth-child(n+2){
+	
+	
+	.vert_navbar div{
 	    border-bottom: thin solid white;
     	border-top: thin solid white;
     	height: 30px;
     	margin-top: 3px;
-    	padding-top: 10px;
+    	padding-top: 15px;
 	}
-	.vert_navbar ul>li img{
+	.vert_navbar div img{
 		width:25px;
+		height:25px;
+		margin-left:10px;
 	}
-	.vert_navbar ul>li span{
+	.vert_navbar div span{
 		font-size:15px;
 		color:white;
 		vertical-align: top;
-		margin-left:15px;
+		margin-left:10px;
 	}
 	.display{
-		width:55%;
+		width:45%;
 		display:inline-block;
 		vertical-align: top;
 		border-right: thin solid;
@@ -788,7 +779,7 @@ html, body {
 	.disp_header{
 		background-color: #e4e2e2;
 		color: #463741;
-		font-size:35px;
+		font-size:30px;
 		text-align: center;
 		border-bottom: thick solid #463741;
 	}
@@ -807,11 +798,12 @@ html, body {
 		width:100%;
 	}
 	.follow_list{
-		width:25%;
+		width:33%;
 		display:inline-block;
 
 	}
-	.follow_header{font-weight:bolder;font-weight:bolder;
+	.follow_header{
+		font-weight:bolder;
 		font-size:14px;
 		text-align:left;
 	}
@@ -823,13 +815,13 @@ html, body {
 		 margin-left:-15%;
 	}
 	.store_img{
-		width: 45px;
-    	height: 45px;
+		width: 40px;
+    	height: 41px;
 	}
 	.store_details{
 		display: inline-block;
 		vertical-align: top;
-		width:70%;
+		width:53%;
 		height:50px;
 	}
 	.store_name{
@@ -855,8 +847,7 @@ html, body {
 	.rev_fav{
 		display:inline-block;
 		vertical-align: top;
-		width:100%;
-		margin-left:5px;
+		width:24%;
 	}
 	.near_stores ul{
 		list-style-type: none;
@@ -869,8 +860,8 @@ html, body {
 	.follow_div{
 		display:inline-block;
 		vertical-align: top;
-		width:66px;
-		margin-left:5px;
+		width:40px;
+		
 	}
 	.follow{
 		width:40px;
@@ -878,12 +869,12 @@ html, body {
 	}
 	.user_img{
 		width: 40px;
-    	height: 40px;
+    	height: 41px;
 	}
 	.user_details{
 		display: inline-block;
 		vertical-align: top;
-		width:70%;
+		width:59%;
 		height:50px;
 	}
 	.user_name{
@@ -974,7 +965,7 @@ html, body {
 	.main{
 		position: relative;
 		height:500px;
-		font-family: 'Raleway', sans-serif;
+		font-family: 'ProximaNovaRegular';
 	}
 	.main_img{
 		width:100%;
@@ -1038,46 +1029,38 @@ html, body {
 	    border-radius: 8px;
 	    
 	}
+	
 	.vert_navbar{
-		
 		width:100%;
+		background-color:black;
+		vertical-align: top;
+		height:755px;
 		display: none;
 		vertical-align: top;
-			
+	}
 	
-		
-	}
-	.vert_navbar ul{
-		background-color: #1a242d;
-		 list-style-type: none;
-		 text-align: left;
-		 margin:0px;
-		 padding-left:0px;
-		 position:relative;
-		 left:0px;
-		 height:100%;
-	}
-	.vert_navbar ul>li:nth-child(1){
-	    border-bottom: thin solid white;
-    	height: 30px;
-    	padding-top: 10px;
-	}
-	.vert_navbar ul>li:nth-child(n+2){
+	
+	.vert_navbar div{
 	    border-bottom: thin solid white;
     	border-top: thin solid white;
     	height: 30px;
     	margin-top: 3px;
     	padding-top: 10px;
 	}
-	.vert_navbar ul>li img{
+	.vert_navbar div img{
 		width:25px;
+		height:25px;
 	}
-	.vert_navbar ul>li span{
+	.vert_navbar div span{
 		font-size:15px;
 		color:white;
 		vertical-align: top;
 		margin-left:15px;
 	}
+	
+	
+	
+	
 	.display{
 		width:100%;
 		display:block;
@@ -1284,7 +1267,7 @@ html, body {
 		position: relative;
 		height:550px;
 
-		font-family: 'Raleway', sans-serif;
+		font-family: 'ProximaNovaRegular';
 	}
 	.main_img{
 		width:100%;
@@ -1350,35 +1333,26 @@ html, body {
 	}
 	.vert_navbar{
 		width:100%;
+		background-color:black;
+		vertical-align: top;
+		height:755px;
 		display: none;
-		vertical-align: top;		
+		vertical-align: top;
 	}
-	.vert_navbar ul{
-		background-color: #1a242d;
-		 list-style-type: none;
-		 text-align: left;
-		 margin:0px;
-		 padding-left:0px;
-		 position:relative;
-		 left:0px;
-		 height:100%;
-	}
-	.vert_navbar ul>li:nth-child(1){
-	    border-bottom: thin solid white;
-    	height: 30px;
-    	padding-top: 10px;
-	}
-	.vert_navbar ul>li:nth-child(n+2){
+	
+	
+	.vert_navbar div{
 	    border-bottom: thin solid white;
     	border-top: thin solid white;
     	height: 30px;
     	margin-top: 3px;
     	padding-top: 10px;
 	}
-	.vert_navbar ul>li img{
+	.vert_navbar div img{
 		width:25px;
+		height:25px;
 	}
-	.vert_navbar ul>li span{
+	.vert_navbar div span{
 		font-size:15px;
 		color:white;
 		vertical-align: top;
@@ -1589,7 +1563,7 @@ html, body {
 	.main{
 		position: relative;
 		height:500px;
-		font-family: 'Raleway', sans-serif;
+		font-family: 'ProximaNovaRegular';
 	}
 	.main_img{
 		width:100%;
@@ -1654,40 +1628,27 @@ html, body {
 	    
 	}
 	.vert_navbar{
-		
 		width:100%;
+		background-color:black;
+		vertical-align: top;
+		height:755px;
 		display: none;
 		vertical-align: top;
-			
+	}
 	
-		
-	}
-	.vert_navbar ul{
-		background-color: #1a242d;
-		 list-style-type: none;
-		 text-align: left;
-		 margin:0px;
-		 padding-left:0px;
-		 position:relative;
-		 left:0px;
-		 height:100%;
-	}
-	.vert_navbar ul>li:nth-child(1){
-	    border-bottom: thin solid white;
-    	height: 30px;
-    	padding-top: 10px;
-	}
-	.vert_navbar ul>li:nth-child(n+2){
+	
+	.vert_navbar div{
 	    border-bottom: thin solid white;
     	border-top: thin solid white;
     	height: 30px;
     	margin-top: 3px;
     	padding-top: 10px;
 	}
-	.vert_navbar ul>li img{
+	.vert_navbar div img{
 		width:25px;
+		height:25px;
 	}
-	.vert_navbar ul>li span{
+	.vert_navbar div span{
 		font-size:15px;
 		color:white;
 		vertical-align: top;
