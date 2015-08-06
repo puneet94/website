@@ -137,14 +137,13 @@ body {
   }
   .vert_navbar {
     width: 20%;
-    background-color: black;
+    background-color: #2c343b;
     display: inline-block;
     vertical-align: top;
     height: 755px;
   }
   .vert_navbar div {
-    border-bottom: thin solid white;
-    border-top: thin solid white;
+    border-bottom: thin solid grey;
     height: 40px;
     margin-top: 3px;
     padding-top: 15px;
@@ -186,7 +185,7 @@ body {
     display: inline-block;
   }
   .girl_img img {
-    width: 100%;
+    width: 91%;
   }
   .follow_list {
     width: 28%;
@@ -401,14 +400,13 @@ body {
   }
   .vert_navbar {
     width: 20%;
-    background-color: black;
+    background-color: #2c343b;
     display: inline-block;
     vertical-align: top;
     height: 755px;
   }
   .vert_navbar div {
-    border-bottom: thin solid white;
-    border-top: thin solid white;
+    border-bottom: thin solid grey;
     height: 40px;
     margin-top: 3px;
     padding-top: 15px;
@@ -450,7 +448,7 @@ body {
     display: inline-block;
   }
   .girl_img img {
-    width: 100%;
+    width: 91%;
   }
   .follow_list {
     width: 28%;
@@ -674,14 +672,13 @@ body {
   }
   .vert_navbar {
     width: 20%;
-    background-color: black;
+    background-color: #2c343b;
     display: inline-block;
     vertical-align: top;
-    height: 755px;
+    height: 600px;
   }
   .vert_navbar div {
-    border-bottom: thin solid white;
-    border-top: thin solid white;
+    border-bottom: thin solid grey;
     height: 30px;
     margin-top: 3px;
     padding-top: 15px;
@@ -702,7 +699,7 @@ body {
     display: inline-block;
     vertical-align: top;
     border-right: thin solid;
-    height: 960px;
+    height: 600px;
   }
   .disp_header {
     background-color: #e4e2e2;
@@ -723,7 +720,7 @@ body {
     display: inline-block;
   }
   .girl_img img {
-    width: 100%;
+    width: 91%;
   }
   .follow_list {
     width: 33%;
@@ -906,17 +903,17 @@ body {
     text-align: center;
   }
   .change_image {
-    width: 15%;
-    margin-bottom: 40px;
+    width: 5%;
+    margin-bottom: 70px;
   }
   .profile_pic {
-    width: 180px;
+    width: 170px;
     margin-right: 2%;
     margin-left: 2%;
   }
   .add_pic {
-    width: 15%;
-    margin-bottom: 40px;
+    width: 5%;
+    margin-bottom: 70px;
   }
   .state {
     width: 100%;
@@ -940,14 +937,12 @@ body {
   }
   .vert_navbar {
     width: 100%;
-    background-color: black;
-    height: 755px;
+    background-color: #2c343b;
     display: none;
     vertical-align: top;
   }
   .vert_navbar div {
-    border-bottom: thin solid white;
-    border-top: thin solid white;
+    border-bottom: thin solid grey;
     height: 30px;
     margin-top: 3px;
     padding-top: 10px;
@@ -992,7 +987,7 @@ body {
     display: inline-block;
   }
   .girl_img img {
-    width: 100%;
+    width: 91%;
   }
   .follow_list {
     width: 100%;
@@ -1176,8 +1171,8 @@ body {
     text-align: center;
   }
   .change_image {
-    width: 15%;
-    margin-bottom: 40px;
+    width: 5%;
+    margin-bottom: 70px;
   }
   .profile_pic {
     width: 160px;
@@ -1185,8 +1180,8 @@ body {
     margin-left: 2%;
   }
   .add_pic {
-    width: 15%;
-    margin-bottom: 40px;
+    width: 5%;
+    margin-bottom: 70px;
   }
   .state {
     width: 100%;
@@ -1210,14 +1205,12 @@ body {
   }
   .vert_navbar {
     width: 100%;
-    background-color: black;
-    height: 755px;
+    background-color: #2c343b;
     display: none;
     vertical-align: top;
   }
   .vert_navbar div {
-    border-bottom: thin solid white;
-    border-top: thin solid white;
+    border-bottom: thin solid grey;
     height: 30px;
     margin-top: 3px;
     padding-top: 10px;
@@ -1262,7 +1255,7 @@ body {
     display: inline-block;
   }
   .girl_img img {
-    width: 100%;
+    width: 91%;
   }
   .follow_list {
     width: 100%;
@@ -1446,8 +1439,8 @@ body {
     text-align: center;
   }
   .change_image {
-    width: 15%;
-    margin-bottom: 40px;
+    width: 5%;
+    margin-bottom: 70px;
   }
   .profile_pic {
     width: 150px;
@@ -1455,8 +1448,8 @@ body {
     margin-left: 2%;
   }
   .add_pic {
-    width: 15%;
-    margin-bottom: 40px;
+    width: 5%;
+    margin-bottom: 70px;
   }
   .state {
     width: 100%;
@@ -1480,14 +1473,12 @@ body {
   }
   .vert_navbar {
     width: 100%;
-    background-color: black;
-    height: 755px;
+    background-color: #2c343b;
     display: none;
     vertical-align: top;
   }
   .vert_navbar div {
-    border-bottom: thin solid white;
-    border-top: thin solid white;
+    border-bottom: thin solid grey;
     height: 30px;
     margin-top: 3px;
     padding-top: 10px;
@@ -1532,7 +1523,7 @@ body {
     display: inline-block;
   }
   .girl_img img {
-    width: 100%;
+    width: 91%;
   }
   .follow_list {
     width: 100%;
