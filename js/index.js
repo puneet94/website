@@ -2,23 +2,36 @@ $(document).ready(function(){
 	$(".boy_img img").hide();
         $(".girl_img img").hide();
 	$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-
-     
-    if (scroll >= 500) {
-        //clearHeader, not clearheader - caps H
-        $(".boy_img img").show();
-        $(".girl_img img").show();
-        $(".boy_img img").addClass("bounceInRight");
-        $(".girl_img img").addClass("bounceInLeft");
-    }
-    else if(scroll <= 100){
-      $(".boy_img img").hide();
-        $(".girl_img img").hide();
-        $(".boy_img img").removeClass("bounceInRight");
-        $(".girl_img img").removeClass("bounceInLeft"); 
-    }
-}); 
+    	var scroll = $(window).scrollTop();
+    	scroll = scroll+400;
+    	var z = $('.disp_header').offset().top;
+    	console.log(scroll);
+    	if (scroll >= z) {
+        	$(".boy_img img").show();
+        	$(".girl_img img").show();
+        	$(".boy_img img").addClass("bounceInRight");
+        	$(".girl_img img").addClass("bounceInLeft");
+    	}
+    	else{
+        	$(".boy_img img").hide();
+        	$(".girl_img img").hide();
+        	$(".boy_img img").removeClass("bounceInRight");
+        	$(".girl_img img").removeClass("bounceInLeft");	
+    	}
+     	/*
+    	if (scroll >= 400) {	
+        	$(".boy_img img").show();
+        	$(".girl_img img").show();
+        	$(".boy_img img").addClass("bounceInRight");
+        	$(".girl_img img").addClass("bounceInLeft");
+    	}
+    	else if(scroll <= 100){
+    		$(".boy_img img").hide();
+        	$(".girl_img img").hide();
+        	$(".boy_img img").removeClass("bounceInRight");
+        	$(".girl_img img").removeClass("bounceInLeft");	
+    	}*/
+	}); 
 	$('#right_ar1').click(function(){
 		$(this).toggleClass("active");
    		$parent = $(this).parent("p").parent(".follow_header")
