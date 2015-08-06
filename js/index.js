@@ -12,6 +12,12 @@ $(document).ready(function(){
         $(".boy_img img").addClass("bounceInRight");
         $(".girl_img img").addClass("bounceInLeft");
     }
+    else if(scroll <= 100){
+      $(".boy_img img").hide();
+        $(".girl_img img").hide();
+        $(".boy_img img").removeClass("bounceInRight");
+        $(".girl_img img").removeClass("bounceInLeft"); 
+    }
 }); 
 	$('#right_ar1').click(function(){
 		$(this).toggleClass("active");
