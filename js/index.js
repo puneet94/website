@@ -1,5 +1,18 @@
 $(document).ready(function(){
-	
+	$(".boy_img img").hide();
+        $(".girl_img img").hide();
+	$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     
+    if (scroll >= 500) {
+        //clearHeader, not clearheader - caps H
+        $(".boy_img img").show();
+        $(".girl_img img").show();
+        $(".boy_img img").addClass("bounceInRight");
+        $(".girl_img img").addClass("bounceInLeft");
+    }
+}); 
 	$('#right_ar1').click(function(){
 		$(this).toggleClass("active");
    		$parent = $(this).parent("p").parent(".follow_header")
