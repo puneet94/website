@@ -1,4 +1,4 @@
-$(document).ready(function( {
+$(document).ready(function() {
   if(window.innerWidth > 400) {
     $boy = $(".boy_img img");
     $girl = $(".girl_img img");
