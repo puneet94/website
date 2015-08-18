@@ -100,7 +100,7 @@ table.head-wrap { width: 100%; margin:auto;}
 /* ------------------------------------- 
 		BODY 
 ------------------------------------- */
-table.body-wrap { width: 100%;}
+table.body-wrap { width: 100%;background-color: black;}
 
 
 .flip-container {
@@ -171,14 +171,18 @@ table.body-wrap { width: 100%;}
 }
 
 .front {
+	
 	background: rgb(68,47,99);
-	    -webkit-transform: rotateY(0deg);
+	
+	-webkit-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
 	z-index: 2;
 	
 }
 
 .back {
+	
+	
 	background: rgb(245,73,61);
 	-webkit-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);
