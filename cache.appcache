@@ -1,13 +1,10 @@
 CACHE MANIFEST
 
-#version 1.1
-
 CACHE:
 index.html
 css/index.min.css
 images/background_banner_image.png
 images/favourites.png
-
 
 FALLBACK:
 / offline.html
