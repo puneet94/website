@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html manifest="cache.appcache"	>
+<html 	manifest="cache.appcache">
 <head>
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	 <!--<link rel="stylesheet/less" type="text/css" href="css/index.less" />-->
 	 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/index.min.css">
+	<!--<script type="text/javascript" src = "js/less.min.js"></script>-->
+	<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-2.1.4.min.js">\x3C/script>')</script>
-	<script type="text/javascript" src="js/index.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 	
 </head>
 <body>
@@ -98,11 +103,13 @@
 				<span>HABIBI OR HABIBTI?</span>
 			</header>
 			<article class="disp_img">
-				<div class = "boy_img">
-					<img class = "animated" src="images/boy_dark.png">
-				</div>
-				<div class = "girl_img">
-					<img class = "animated " src="images/girl_dark.png">
+				<div class="hab_images">
+					<div class = "boy_img">
+						<img class = "animated" src="images/boy_dark.png">
+					</div>
+					<div class = "girl_img">
+						<img class = "animated " src="images/girl_dark.png">
+					</div>
 				</div>
 			</article>
 		</section>
@@ -111,8 +118,8 @@
 				<header class= "follow_header">
 					<p><span id = "right_ar1"class = "right_arrow">&#9654; </span>RECENTLY VISITED STORES</p>
 				</header>
-				<ul>
-					<li>
+				<div class="vis_stores_div">
+					<div>
 						<img class = "store_img" src="images/store_icon.png">
 						<div class="store_details">
 							<p class = "store_name">Store Name</p>
@@ -122,8 +129,8 @@
 							<img class = "rev" title="Write a review" src="images/review.png">
 							<img class = "fav" title="Add to favourites" src="images/favourites.png">
 						</div>
-					</li>
-					<li>
+					</div>
+					<div>
 						<img class = "store_img" src="images/store_icon.png">
 						<div class="store_details">
 							<p class = "store_name">Store Name</p>
@@ -133,8 +140,8 @@
 							<img class = "rev" title="Write a review" src="images/review.png">
 							<img class = "fav" title="Add to favourites" src="images/favourites.png">
 						</div>
-					</li>
-					<li>
+					</div>
+					<div>
 						<img class = "store_img" src="images/store_icon.png">
 						<div class="store_details">
 							<p class = "store_name">Store Name</p>
@@ -144,16 +151,16 @@
 							<img class = "rev" title="Write a review" src="images/review.png">
 							<img class = "fav" title="Add to favourites" src="images/favourites.png">
 						</div>
-					</li>
+					</div>
 
-				</ul>
+				</div>
 			</article>
 			<article class="near_stores">
 				<header class= "follow_header">
 					<p><span id = "right_ar2" class = "right_arrow">&#9654; </span>STORES NEARBY</p>
 				</header>
-				<ul>
-					<li>
+				<div class="near_stores_div">
+					<div>
 						<img class = "store_img" src="images/store_icon.png">
 						<div class="store_details">
 							<p class = "store_name">Store Name</p>
@@ -163,8 +170,8 @@
 							<img class = "rev" title="Write a review" src="images/review.png">
 							<img class = "fav" title="Add to favourites" src="images/favourites.png">
 						</div>
-					</li>
-					<li>
+					</div>
+					<div>
 						<img class = "store_img" src="images/store_icon.png">
 						<div class="store_details">
 							<p class = "store_name">Store Name</p>
@@ -174,8 +181,8 @@
 							<img class = "rev" title="Write a review" src="images/review.png">
 							<img class = "fav" title="Add to favourites" src="images/favourites.png">
 						</div>
-					</li>
-					<li>
+					</div>
+					<div>
 						<img class = "store_img" src="images/store_icon.png">
 						<div class="store_details">
 							<p class = "store_name">Store Name</p>
@@ -185,15 +192,15 @@
 							<img class = "rev" title="Write a review" src="images/review.png">
 							<img class = "fav" title="Add to favourites" src="images/favourites.png">
 						</div>
-					</li>
-				</ul>
+					</div>
+				</div>
 			</article>
 			<article class="follow_suggestions">
 				<header class= "follow_header">
 					<p><span id = "right_ar3" class = "right_arrow">&#9654; </span>WHO TO FOLLOW</p>
 				</header>
-				<ul>
-					<li>
+				<div class="follow_suggestions_div">
+					<div>
 						<img class = "user_img" src="images/store_icon.png">
 						<div class="user_details">
 							<p class = "user_name">User Name</p>
@@ -202,8 +209,8 @@
 						<div class="follow_div">
 							<img class = "follow" title="Follow" src="images/follow.png">
 						</div>
-					</li>
-					<li>
+					</div>
+					<div>
 						<img class = "user_img" src="images/store_icon.png">
 						<div class="user_details">
 							<p class = "user_name">User Name</p>
@@ -212,8 +219,8 @@
 						<div class="follow_div">
 							<img class = "follow" title="Follow" src="images/follow.png">
 						</div>
-					</li>
-					<li>
+					</div>
+					<div>
 						<img class = "user_img" src="images/store_icon.png">
 						<div class="user_details">
 							<p class = "user_name">User Name</p>
@@ -222,8 +229,8 @@
 						<div class="follow_div">
 							<img class = "follow" title="Follow" src="images/follow.png">
 						</div>
-					</li>
-				</ul>
+					</div>
+				</div>
 			</article>
 		</section>
 	</div>
